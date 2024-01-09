@@ -7,7 +7,7 @@ const SvgRmu = ({ stats }) => {
 
     return (
         <svg width="40%" viewBox="0 0 3331 902" fill="none" xmlns="http://www.w3.org/2000/svg"
-            style={{ transform: "scale(1)", marginLeft: '100px' }}>
+            style={{ transform: "scale(1)", marginLeft: '80px' }}>
             <g id="Asset 2 1" clip-path="url(#clip0_0_1)">
                 <g id="Layer 2">
                     <g id="Layer 1">
