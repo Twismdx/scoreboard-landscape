@@ -242,6 +242,17 @@ div.matchIdInput {
 	margin-left: -50px;
 	text-shadow: 0.2px 0.2px 0.2px #000;
 }
+.container-4 {
+	text-align: center;
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	margin-top: 40px;
+	transform: scaleY(1.2);
+	margin-bottom: 80px;
+	margin-left: -50px;
+	text-shadow: 0.2px 0.2px 0.2px #000;
+}
 .container-1 {
 	text-align: center;
 	grid-column: 2 / 2;
