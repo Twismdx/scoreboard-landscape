@@ -28,12 +28,13 @@ function App() {
 		selected,
 		link,
 		setLink,
-		matchId,
-		compId,
 		isLandscape,
 	} = useGlobalContext()
 
 	const [stats, setStats] = useState([])
+	const location = useLocation()
+	const compId = new URLSearchParams(location.search).get('compId')
+	const matchId = new URLSearchParams(location.search).get('matchId')
 
 	const mid = 4619
 	const cid = 645758
