@@ -247,7 +247,8 @@ div.matchIdInput {
 	display: flex;
 	justify-self: center;
 	align-items: center;
-	margin-left: -50px;
+	margin-left: -80px;
+	margin-top: -10px;
 	text-shadow: 0.2px 0.2px 0.2px #000;
 }
 .container-1 {
