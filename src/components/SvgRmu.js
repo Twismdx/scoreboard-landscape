@@ -173,7 +173,7 @@ const SvgRmu = ({ stats }) => {
 				</text>
 				<text
 					id=' tournament'
-					transform='translate(600 855)'
+					transform='translate(600 858)'
 					style={{
 						isolation: 'isolate',
 						fontSize: 100,
@@ -188,7 +188,7 @@ const SvgRmu = ({ stats }) => {
 				</text>
 				<text
 					id=' race'
-					transform='translate(1500.89 855)'
+					transform='translate(1500.89 858)'
 					style={{
 						isolation: 'isolate',
 						fontSize: 100,
@@ -203,7 +203,7 @@ const SvgRmu = ({ stats }) => {
 				</text>
 				<text
 					id=' timer'
-					transform='translate(2135.51 860)'
+					transform='translate(2135.51 863)'
 					style={{
 						isolation: 'isolate',
 						fontSize: 130,

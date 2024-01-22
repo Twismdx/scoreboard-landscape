@@ -167,7 +167,7 @@ const SvgTeam = ({ stats }) => {
 						textAlign: 'center',
 						textAnchor: 'middle',
 					}}
-					transform='translate(675 105)'
+					transform='translate(675 110)'
 				>
 					00:00
 				</text>
@@ -241,7 +241,7 @@ const SvgTeam = ({ stats }) => {
 						textAlign: 'center',
 						textAnchor: 'middle',
 					}}
-					transform='translate(815 40)'
+					transform='translate(815 45)'
 				>
 					Race to
 				</text>
