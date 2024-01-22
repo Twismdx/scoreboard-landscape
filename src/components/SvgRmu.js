@@ -11,6 +11,8 @@ const SvgRmu = ({ stats }) => {
 			xmlns='http://www.w3.org/2000/svg'
 			style={{
 				transform: 'scaleY(2.0)scaleX(1.4)',
+				marginLeft: '150px',
+				marginTop: '60px',
 			}}
 		>
 			<g
