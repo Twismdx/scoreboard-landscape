@@ -224,8 +224,8 @@ div.matchIdInput {
 .main-container {
 	display: grid;
 	text-align: center;
-	grid-template-columns: 33.3% 33.3% 33.3%;
-	grid-template-rows: 33.3% 33.3% 33.3%;
+	grid-template-columns: 10% 80% 10%;
+	grid-template-rows: 50% 50%;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
@@ -245,16 +245,20 @@ div.matchIdInput {
 .container-4 {
 	text-align: center;
 	display: flex;
-
 	justify-self: center;
 	align-items: center;
 	text-shadow: 0.2px 0.2px 0.2px #000;
 }
 .container-1 {
-	display: flex;
-	justify-content: center;
+	text-align: center;
+	grid-column: 2 / 2;
+	grid-row: 1 / 1;
+	justify-self: center;
 	align-items: center;
-	height: 100vh; /* Set the height of the container to the full viewport height */
+	margin-top: -55px;
+	margin-left: 4px;
+	margin-bottom: 80px;
+	text-shadow: 0.2px 0.2px 0.2px #000;
 }
 
 .form {

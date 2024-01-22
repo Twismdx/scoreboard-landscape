@@ -5,13 +5,12 @@ import { useGlobalContext } from './Context'
 const SvgRmu = ({ stats }) => {
 	return (
 		<svg
-			// width='100%'
-			// height='100%'
+			width='40%'
 			viewBox='0 0 3331 902'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 			style={{
-				transform: 'scale(3)',
+				transform: 'scaleY(2.0)scaleX(1.4)',
 			}}
 		>
 			<g
