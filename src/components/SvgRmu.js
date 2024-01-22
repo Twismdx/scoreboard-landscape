@@ -184,7 +184,7 @@ const SvgRmu = ({ stats }) => {
 						textAnchor: 'middle',
 					}}
 				>
-					VNEA Vegas League
+					{stats[0] ? stats[0].compname : ''}
 				</text>
 				<text
 					id=' race'
@@ -199,9 +199,24 @@ const SvgRmu = ({ stats }) => {
 						textAnchor: 'middle',
 					}}
 				>
-					Race to 11
+					{stats[0] ? stats[0].raceto : ''}
 				</text>
 				<text
+					id=' race'
+					transform='translate(2135.51 863)'
+					style={{
+						isolation: 'isolate',
+						fontSize: 100,
+						fill: '#fff',
+						fontFamily: 'xxBold',
+						fontWeight: '900',
+						textAlign: 'center',
+						textAnchor: 'middle',
+					}}
+				>
+					{stats[0] ? stats[0].venuename : ''}
+				</text>
+				{/* <text
 					id=' timer'
 					transform='translate(2135.51 863)'
 					style={{
@@ -215,7 +230,7 @@ const SvgRmu = ({ stats }) => {
 					}}
 				>
 					1:00
-				</text>
+				</text> */}
 			</g>
 			<defs>
 				<linearGradient
