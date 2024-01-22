@@ -5,14 +5,13 @@ import { useGlobalContext } from './Context'
 const SvgRmu = ({ stats }) => {
 	return (
 		<svg
-			width='40%'
+			// width='100%'
+			// height='100%'
 			viewBox='0 0 3331 902'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 			style={{
-				transform: 'scaleY(2.0)scaleX(1.4)',
-				marginLeft: '150px',
-				marginTop: '60px',
+				transform: 'scale(3)',
 			}}
 		>
 			<g
@@ -199,7 +198,8 @@ const SvgRmu = ({ stats }) => {
 						textAnchor: 'middle',
 					}}
 				>
-					{'Race To '}{stats[0] ? stats[0].raceto : ''}
+					{'Race To '}
+					{stats[0] ? stats[0].raceto : ''}
 				</text>
 				<text
 					id=' race'

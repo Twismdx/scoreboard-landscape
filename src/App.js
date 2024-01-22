@@ -86,7 +86,7 @@ function App() {
 					}
 				</style>
 			</Helmet>
-			<div className='container-4'>
+			<div className='container-1'>
 				<SvgRmu stats={stats} />
 			</div>
 		</>
