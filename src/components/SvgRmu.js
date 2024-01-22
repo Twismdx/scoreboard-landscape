@@ -199,7 +199,7 @@ const SvgRmu = ({ stats }) => {
 						textAnchor: 'middle',
 					}}
 				>
-					{stats[0] ? stats[0].raceto : ''}
+					{'Race To '}{stats[0] ? stats[0].raceto : ''}
 				</text>
 				<text
 					id=' race'
