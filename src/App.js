@@ -32,51 +32,68 @@ function App() {
 	} = useGlobalContext()
 
 	const [stats, setStats] = useState([])
+	const [playSite, setPlaySite] = useState(false)
 	const location = useLocation()
 	const compId = new URLSearchParams(location.search).get('compId')
 	const matchId = new URLSearchParams(location.search).get('matchId')
+	const test = new URLSearchParams(location.search).get('test')
 
-	const mid = 4619
-	const cid = 645758
+	useEffect(() => {
+		if (test === 1 || test === '1') {
+			setPlaySite(true)
+		} else {
+			setPlaySite(false)
+		}
+	}, [test])
+
+	const liveReq = () => {
+		axios
+			.post('https://twism.vercel.app/ids', null, {
+				params: {
+					matchId,
+					compId,
+				},
+			})
+			.then(function (response) {
+				const res = Object.keys(response.data).map(
+					(key) => response.data[key]
+				)
+				setStats(res)
+			})
+			.catch((err) => console.warn(err))
+	}
+
+	const testReq = () => {
+		axios
+			.post('https://twism.vercel.app/playsite', null, {
+				params: {
+					matchId,
+					compId,
+				},
+			})
+			.then(function (response) {
+				const res = Object.keys(response.data).map(
+					(key) => response.data[key]
+				)
+				setStats(res)
+			})
+			.catch((err) => console.warn(err))
+	}
+
 	useEffect(() => {
 		const interval = setInterval(() => {
-			axios
-				.post('https://twism.vercel.app/ids', null, {
-					params: {
-						matchId,
-						compId,
-					},
-				})
-				.then(function (response) {
-					const res = Object.keys(response.data).map(
-						(key) => response.data[key]
-					)
-					setStats(res)
-				})
-				.catch((err) => console.warn(err))
+			if (playSite === true) {
+				testReq()
+			} else if (playSite === false) {
+				liveReq()
+			}
 		}, 10000)
 
 		return () => {
 			clearInterval(interval)
 		}
-	}, [matchId, compId]) // Add any dependencies that should trigger the effect
+	}, [matchId, compId, playSite])
 
-	// if (!isLandscape) {
-	//   return (
-	//     <>
-	//       <Helmet>
-	//         <style>
-	//           {
-	//             "body { background-image: none; background-color: transparent !important; }"
-	//           }
-	//         </style>
-	//       </Helmet>
-	//       <div className="container-3">
-	//         <SvgTeam stats={stats} />
-	//       </div>
-	//     </>
-	//   )
-	// } else if (isLandscape) {
 	return (
 		<>
 			<Helmet>
