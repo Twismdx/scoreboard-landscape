@@ -180,7 +180,7 @@ const SvgRmu = ({ stats }) => {
 				transform='translate(109, 78)'
 				style={{
 					isolation: 'isolate',
-					fontSize: 8,
+					fontSize: 7,
 					fill: '#fff',
 					fontFamily: 'xxBold',
 					fontWeight: '900',
@@ -189,8 +189,7 @@ const SvgRmu = ({ stats }) => {
 					textAnchor: 'middle',
 				}}
 			>
-				{'Race To'}
-				{/* {stats[0] ? stats[0]?.raceto : 'Race To '} */}
+				{stats[0].matchformat}
 			</text>
 			<text
 				id='tournament_name'
@@ -198,7 +197,7 @@ const SvgRmu = ({ stats }) => {
 				transform='translate(195, 9)'
 				style={{
 					isolation: 'isolate',
-					fontSize: 8,
+					fontSize: 7,
 					fill: '#fff',
 					fontFamily: 'xxBold',
 					fontWeight: '700',
@@ -214,7 +213,7 @@ const SvgRmu = ({ stats }) => {
 				transform='translate(47, 78)'
 				style={{
 					isolation: 'isolate',
-					fontSize: 8,
+					fontSize: 7,
 					fill: '#fff',
 					fontFamily: 'xxBold',
 					fontWeight: '900',
@@ -230,7 +229,7 @@ const SvgRmu = ({ stats }) => {
 				transform='translate(82, 9)'
 				style={{
 					isolation: 'isolate',
-					fontSize: 8,
+					fontSize: 7,
 					fill: '#fff',
 					fontFamily: 'xxBold',
 					fontWeight: '900',
@@ -247,7 +246,7 @@ const SvgRmu = ({ stats }) => {
 				transform='translate(95, 32)'
 				style={{
 					isolation: 'isolate',
-					fontSize: 15,
+					fontSize: 12,
 					fill: '#fff',
 					fontFamily: 'xxBold',
 					fontWeight: '900',
@@ -263,7 +262,7 @@ const SvgRmu = ({ stats }) => {
 				transform='translate(87, 59)'
 				style={{
 					isolation: 'isolate',
-					fontSize: 15,
+					fontSize: 12,
 					fill: '#fff',
 					fontFamily: 'xxBold',
 					fontWeight: '900',
