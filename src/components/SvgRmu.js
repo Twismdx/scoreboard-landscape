@@ -189,7 +189,7 @@ const SvgRmu = ({ stats }) => {
 					textAnchor: 'middle',
 				}}
 			>
-				{stats[0].matchformat}
+				{/* {stats[0].matchformat} */}
 			</text>
 			<text
 				id='tournament_name'
